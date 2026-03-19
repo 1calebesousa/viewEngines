@@ -1,0 +1,76 @@
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #d4fcff, #a1c4fd);
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        max-width: 600px;
+        margin: 60px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        text-align: center;
+    }
+
+    h1{
+        color: #3a7bd5;
+        margin-bottom: 10px;
+    }
+
+    p{
+        color: #555;
+        font-size: 18px;
+    }
+
+    h2{
+        margin-top: 25px;
+        color: #333;
+    }
+
+    ul{
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    li{
+        background: #e6f2ff;
+        margin: 10px 0;
+        padding: 12px;
+        border-radius: 10px;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    li:hover{
+        background: #cfe5ff;
+        transform: scale(1.03);
+        cursor: pointer;
+    }
+</style>
+
+<div class="container">
+    <h1>{{title}}</h1>
+    <p>Bem-vindo à página de <strong>{{title}}</strong> 🥤</p>
+
+    <h2>🥤 Lista de Bebidas</h2>
+
+    <ul>
+        <a href="/bebidas/refrigerante">
+            <li>🥤 Refrigerante</li>
+        </a>
+
+        <a href="/bebidas/agua">
+            <li>💧 Água</li>
+        </a>
+    </ul>
+</div>
